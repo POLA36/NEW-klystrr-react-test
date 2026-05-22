@@ -1,0 +1,72 @@
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 40px 20px;
+}
+
+.welcome-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 540px;
+  width: 100%;
+}
+
+.badge {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  padding: 4px 14px;
+  border-radius: 99px;
+}
+
+h1 {
+  font-size: 52px;
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+  margin: 0;
+  color: var(--text-h);
+
+  @media (max-width: 1024px) {
+    font-size: 36px;
+  }
+}
+
+.brand {
+  background: linear-gradient(135deg, var(--accent) 0%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.tagline {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text);
+  margin: 0;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+.divider {
+  width: 48px;
+  height: 2px;
+  background: var(--border);
+  border-radius: 2px;
+}
+
+.hint {
+  font-size: 15px;
+  color: var(--text);
+  margin: 0;
+}
